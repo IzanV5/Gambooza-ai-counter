@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  gambooza-app:
+    build: .
+    container_name: gambooza_container
+    ports:
+      - "8000:8000"
+    volumes:
+      # Persistencia: Mapeamos la DB y los uploads a tu carpeta local
+      # Así, si apagas Docker, no pierdes los datos.
+      - ./gambooza.db:/app/gambooza.db
+      - ./uploads:/app/uploads
+    restart: unless-stopped

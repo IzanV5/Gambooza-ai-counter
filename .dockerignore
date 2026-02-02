@@ -1,0 +1,9 @@
+__pycache__
+*.pyc
+.git
+.vscode
+venv
+uploads/*
+gambooza.db
+videos/*
+codigo antiguo/*

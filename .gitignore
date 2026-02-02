@@ -1,0 +1,27 @@
+# --- Archivos de Python y Sistema ---
+__pycache__/
+*.pyc
+.DS_Store
+
+# --- Entorno Virtual (¡Muy importante no subir esto!) ---
+venv/
+env/
+
+# --- Archivos pesados y de base de datos ---
+*.db
+*.sqlite3
+gambooza.db
+
+# --- Carpetas que NO quieres subir (según tu foto) ---
+codigo antiguo/
+prueba/
+
+# --- Archivos multimedia subidos (Videos de prueba) ---
+# Mantenemos la carpeta pero no el contenido
+uploads/*
+!uploads/.gitkeep
+
+# --- Referencias (Opcional) ---
+# Si quieres subir las referencias (fotos pequeñas) para que funcione la demo, NO pongas esto.
+# Si prefieres que el repo esté limpio de imágenes, descomenta la línea de abajo:
+# src/ai/referencias/*.jpg

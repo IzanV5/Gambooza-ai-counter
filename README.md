@@ -102,12 +102,18 @@ gambooza_case/
 
 ---
 
-## 🛡️ Notas de la Defensa
+## 🛡️ Notas Técnicas
 
-- Persistencia: Los datos se guardan en gambooza.db. Si se desea reiniciar el historial, basta con borrar este archivo.
+* **💾 Persistencia de Datos:**
+    Todos los conteos y eventos se guardan automáticamente en la base de datos `gambooza.db`.
+    > **Nota:** Si deseas reiniciar el historial a cero, basta con **borrar este archivo**. El sistema generará uno nuevo y limpio en la siguiente ejecución.
 
-- Formatos de Vídeo: El sistema acepta MP4 y MOV. Si el navegador no soporta el códec original, el backend intentará repararlo automáticamente.
+* **📹 Formatos de Vídeo:**
+    El sistema acepta archivos **.MP4** y **.MOV**.
+    > **Compatibilidad:** El backend incluye un módulo inteligente (`video_fixer.py`). Si subes un vídeo con un códec que el navegador no soporta, el sistema intentará repararlo automáticamente para que se pueda visualizar.
 
 ---
 
-Autor: Izan Rodríguez Cuerdo. Caso Práctico de Ingeniería de Software y Visión Artificial.
+### 👨‍💻 Autor
+**Izan Rodríguez Cuerdo**
+*Caso Práctico de Ingeniería de Software y Visión Artificial*
